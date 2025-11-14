@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>EliteConsult Pricing | Premium, VIP, VVIP Consulting Packages</title>
+  <meta name="description" content="Discover EliteConsult’s transparent pricing for Premium, VIP, and VVIP consulting and advisory services. Compare packages and choose the best for your business.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://www.eliteconsult.com/pricing.html">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Poppins:400,600,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #1a1832;
+      --brand2: #3b2db8;
+      --gold: #e8b200;
+      --vvip: #6f1ed4;
+      --white: #fff;
+      --bg: #f6f7fb;
+    }
+    html { scroll-behavior:smooth;}
+    body {
+      font-family: 'Poppins', 'Montserrat', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--brand);
+      font-size: 1.06em;
+    }
+    .navbar { background:rgba(26,24,50,0.96) !important; }
+    .navbar-brand, .navbar-nav .nav-link { color:var(--white)!important; }
+    .navbar-brand span { font-weight: 800;}
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {color:var(--gold)!important;}
+    /* Hero */
+    .hero-section {
+      background:linear-gradient(120deg, #1a1832e6 60%, #3b2db8c0 100%), url('firm.jpeg') center/cover no-repeat;
+      color: #fff;
+      min-height: 44vh;
+      display: flex; align-items: center;
+    }
+    .hero-content {
+      padding:40px 0 25px 0;
+      text-align:center;
+      max-width:800px;
+      margin:auto;
+    }
+    .hero-content h1 {
+      font-size:2.2rem; font-weight:900; letter-spacing:-1px;
+      background: linear-gradient(90deg, #e8b200 60%, #fff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-content p {font-size:1.17rem;}
+    /* Section Titles */
+    .section-title { font-weight:800; margin-bottom:1.2em; text-align:center; letter-spacing:-.5px;}
+    /* Pricing Cards */
+    .pricing-card {
+      background: #fff; border-radius:1.3em; box-shadow:0 3px 18px #3b2db80c; padding:2.3em 1.3em;
+      text-align:center; min-height:410px;
+      border-top: 4px solid #e8b200;
+      position:relative;
+      transition: box-shadow .17s, transform .14s;
+    }
+    .pricing-premium {border-top:4px solid var(--brand2);}
+    .pricing-vip {border-top:4px solid var(--gold);}
+    .pricing-vvip {border-top:4px solid var(--vvip);}
+    .pricing-card .badge {position:absolute;top:1.3em;right:1.3em;}
+    .pricing-price {font-size:2.2em;font-weight:900;color:var(--brand2);}
+    .pricing-feature {text-align:left;font-size:1.06em;}
+    .pricing-btn {
+      background: linear-gradient(90deg,#e8b200 60%,#3b2db8 100%);
+      color: #fff;
+      border: none;
+      border-radius: 2rem;
+      font-weight: 700;
+      font-size:1.08rem;
+      padding: 0.7em 2em;
+      margin-top:1em;
+      transition: background .15s;
+    }
+    .pricing-btn:hover {background:linear-gradient(90deg, #3b2db8 60%,#e8b200 100%);}
+    .pricing-card:hover {box-shadow:0 8px 28px #3b2db833;transform:translateY(-5px);}
+    /* Comparison Table */
+    .table-pricing th, .table-pricing td {
+      text-align:center;
+      vertical-align:middle;
+      font-size:1em;
+    }
+    .table-pricing th {background: #ede9fc;}
+    .table-pricing .table-success {background:#f7fbe9;}
+    /* FAQ */
+    .accordion-button:not(.collapsed) {background: linear-gradient(90deg,#e8b20022 60%,#3b2db822 100%);}
+    .accordion-button:focus {box-shadow: none;}
+    /* CTA */
+    .cta-section {
+      background: linear-gradient(100deg,#e8b200 60%,#3b2db8 100%);
+      color: #fff;
+      border-radius:1.3em;
+      padding:2.2em 2em;
+      text-align:center;
+      margin-bottom:2.7em;
+      box-shadow: 0 2px 20px #3b2db82a;
+    }
+    .cta-btn {
+      background: #fff;
+      color: var(--brand2);
+      font-weight:700;
+      border:none;
+      border-radius:2em;
+      padding:0.7em 2.3em;
+      font-size:1.1em;
+      transition: background .16s, color .17s;
+      margin-top:.8em;
+    }
+    .cta-btn:hover {background:var(--brand2);color:#fff;}
+    .footer {
+      background: linear-gradient(120deg, #1a1832 70%, #3b2db8 100%);
+      color: #fff; padding: 38px 0 8px 0;
+      font-size:1.08rem; margin-top: 40px;
+    }
+    .footer a {color:#e8b200;}
+    .footer-social a {
+      background: rgba(59,45,184,0.10);
+      border-radius:50%;
+      color: #e8b200;
+      font-size:1.38rem;
+      width:40px; height:40px;
+      display:inline-flex; align-items:center; justify-content:center;
+       margin: 0 3px; border: 1.5px solid #e8b20033;
+      transition: background .14s, color .14s, transform .13s;
+    }
+     
+    .footer-social a:hover { background: #e8b200; color: #3b2db8; transform:scale(1.10);}
+    @media (max-width:700px){
+      .hero-content h1 { font-size:1.1rem;}
+      .hero-content {padding:24px 0 10px 0;}
+      .section-title {font-size:1.09em;}
+      .pricing-card, .cta-section {padding:1em;}
+      .footer { font-size:.97rem;}
+    }
+  </style>
+ </head>
+ <body>
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="ELITECONSULT BRAND LOGO.png" alt="EliteConsult Logo" style="height:32px;margin-right:8px;">
+      <span>EliteConsult</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="pricing.html">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-warning ms-3 fw-bold d-none d-lg-inline-block" style="color:#3b2db8;">Get Started</a>
+    </div>
+  </div>
+ </nav>
+ <!-- Hero Section -->
+ <section class="hero-section" style="cursor: pointer;">
+  <div class="container hero-content">
+    <h1>Pricing & Packages</h1>
+    <p class="mb-0">Transparent pricing for Premium, VIP, and VVIP consulting. Choose the package that fits your ambition.</p>
+  </div>
+ </section>
+ <!-- Pricing Cards -->
+ <section class="container my-5" style="cursor: pointer;">
+  <h2 class="section-title">Our Consulting Packages</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="pricing-card pricing-premium">
+        <span class="badge bg-primary">Premium</span>
+        <div class="pricing-price">$2,500</div>
+        <div class="mb-3">Per Project</div>
+        <ul class="list-unstyled pricing-feature mb-4">
+          <li><i class="fas fa-check text-success"></i> Strategy Consulting</li>
+          <li><i class="fas fa-check text-success"></i> Digital Analysis</li>
+          <li><i class="fas fa-check text-success"></i> Market Research</li>
+        </ul>
+        <a href="contact.html" class="btn pricing-btn">Request Proposal</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="pricing-card pricing-vip">
+        <span class="badge bg-warning text-dark">VIP</span>
+        <div class="pricing-price">$7,500</div>
+        <div class="mb-3">Per Month</div>
+        <ul class="list-unstyled pricing-feature mb-4">
+          <li><i class="fas fa-check text-success"></i> All Premium Features</li>
+          <li><i class="fas fa-check text-success"></i> Executive Coaching</li>
+          <li><i class="fas fa-check text-success"></i> Board Advisory</li>
+          <li><i class="fas fa-check text-success"></i> 24/7 Support Line</li>
+        </ul>
+        <a href="contact.html" class="btn pricing-btn">VIP Onboard</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="pricing-card pricing-vvip">
+        <span class="badge" style="background:#6f1ed4 !important;color:#fff;">VVIP</span>
+        <div class="pricing-price">$25,000</div>
+        <div class="mb-3">Per Engagement</div>
+        <ul class="list-unstyled pricing-feature mb-4">
+          <li><i class="fas fa-check text-success"></i> All VIP Benefits</li>
+          <li><i class="fas fa-check text-success"></i> Family Office Advisory</li>
+          <li><i class="fas fa-check text-success"></i> Ultra-Private Deal Sourcing</li>
+          <li><i class="fas fa-check text-success"></i> Global Market Access</li>
+          <li><i class="fas fa-check text-success"></i> White-Glove Concierge</li>
+        </ul>
+        <a href="contact.html" class="btn pricing-btn">VVIP Access</a>
+      </div>
+    </div>
+  </div>
+ </section>
+ <!-- Comparison Table -->
+ <section class="container my-5" style="cursor: pointer;">
+  <h2 class="section-title">Compare Packages</h2>
+  <div class="table-responsive">
+    <table class="table table-bordered table-pricing align-middle">
+      <thead>
+        <tr>
+          <th>Features</th>
+          <th>Premium</th>
+          <th>VIP</th>
+          <th>VVIP</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Strategy Consulting</td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <tr>
+          <td>Digital Analysis</td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <tr>
+          <td>Market Research</td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <tr>
+          <td>Executive Coaching</td>
+          <td></td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <tr>
+          <td>Board Advisory</td>
+          <td></td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <tr>
+          <td>24/7 Support</td>
+          <td></td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <tr>
+          <td>Family Office Advisory</td>
+          <td></td>
+          <td></td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <tr>
+          <td>Ultra-Private Deal Sourcing</td>
+          <td></td>
+          <td></td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <tr>
+          <td>Global Market Access</td>
+          <td></td>
+          <td></td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <tr>
+          <td>White-Glove Concierge</td>
+          <td></td>
+          <td></td>
+          <td class="table-success"><i class="fas fa-check text-success"></i></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ </section>
+ <!-- FAQ Accordion -->
+ <section class="container my-5" style="cursor: pointer;">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq1">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+          Are engagements customizable?
+        </button>
+      </h2>
+      <div id="faqOne" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Yes. All packages can be customized to your business needs. Contact us for a bespoke quote or to combine services.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+          Is there a minimum commitment?
+        </button>
+      </h2>
+      <div id="faqTwo" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Premium: per project; VIP: 1 month minimum; VVIP: by engagement. Longer retainers receive discounts.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+          Can I upgrade from Premium to VIP or VVIP?
+        </button>
+      </h2>
+      <div id="faqThree" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Absolutely! You can upgrade at any time and only pay the price difference for the new package.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq4">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+          How do I get started?
+        </button>
+      </h2>
+      <div id="faqFour" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Click any "Contact" or "Request" button, or email <a href="mailto:info@eliteconsult.com">info@eliteconsult.com</a> to schedule a confidential discovery call.
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <!-- CTA Section -->
+ <section class="container cta-section mb-5">
+  <h3 class="mb-3 fw-bold">Ready to Elevate Your Business?</h3>
+  <p>Contact us for a bespoke proposal or to discuss which package is best for you.</p>
+  <a href="contact.html" class="cta-btn">Contact EliteConsult</a>
+ </section>
+ <!-- Footer -->
+ <footer class="footer">
+  <div class="container">
+    <div class="row mb-3">
+      <div class="col-md-6 mb-2">
+        <b>EliteConsult</b> &copy; 2025. Premium Business Consulting. <br>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="col-md-6 mb-2 text-end">
+        <span class="footer-social">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </span>
+      </div>
+    </div>
+  </div>
+ </footer>
+ <!-- Bootstrap, jQuery -->
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ <script>
+  // Smooth Scroll for internal links (if any)
+  $('a[href^="#"]').on('click', function(e) {
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop: target.offset().top - 70}, 500);
+    }
+  });
+ </script>
+ </body>
+ </html>

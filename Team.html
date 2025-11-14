@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Meet the Team | EliteConsult</title>
+  <meta name="description" content="Meet the executive and leadership team behind EliteConsult – seasoned experts in business strategy, VIP advisory, and global consulting.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://www.eliteconsult.com/team.html">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Poppins:400,600,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #1a1832;
+      --brand2: #3b2db8;
+      --gold: #e8b200;
+      --vvip: #6f1ed4;
+      --white: #fff;
+      --bg: #f6f7fb;
+    }
+    html { scroll-behavior:smooth;}
+    body {
+      font-family: 'Poppins', 'Montserrat', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--brand);
+      font-size: 1.06em;
+    }
+    .navbar { background:rgba(26,24,50,0.96) !important; }
+    .navbar-brand, .navbar-nav .nav-link { color:var(--white)!important; }
+    .navbar-brand span { font-weight: 800;}
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {color:var(--gold)!important;}
+    .hero-section {
+      background:linear-gradient(120deg, #1a1832e6 60%, #3b2db8c0 100%), url('firm.jpeg') center/cover no-repeat;
+      color: #fff;
+      min-height: 40vh;
+      display: flex; align-items: center;
+    }
+    .hero-content {
+      padding:38px 0 18px 0;
+      text-align:center;
+      max-width:700px;
+      margin:auto;
+    }
+    .hero-content h1 {
+      font-size:2.2rem; font-weight:900; letter-spacing:-1px;
+      background: linear-gradient(90deg, #e8b200 60%, #fff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-content p {font-size:1.12rem;}
+    .section-title { font-weight:800; margin-bottom:1.2em; text-align:center; letter-spacing:-.5px;}
+    .team-card {
+      background:#fff;
+      border-radius:1.3em;
+      box-shadow:0 3px 18px #3b2db80c;
+      text-align:center;
+      padding:2.1em 1.3em 1.5em 1.3em;
+      transition: box-shadow .17s, transform .14s;
+      min-height: 380px;
+      position:relative;
+    }
+    .team-photo {
+      width:100px;height:100px;
+      object-fit:cover;
+      border-radius:50%;
+      margin-bottom:1em;
+      border: 3px solid var(--gold);
+      box-shadow:0 2px 18px #3b2db824;
+      transition: border .15s;
+    }
+    .team-card:hover .team-photo {border:3px solid var(--brand2);}
+    .team-role {
+      color:var(--brand2);
+      font-weight:600;
+      margin-bottom:.5em;
+    }
+    .team-social a {
+      color: var(--gold);
+      font-size:1.28em;
+      margin: 0 6px;
+      transition: color .14s;
+    }
+    .team-social a:hover {color:var(--brand2);}
+    .team-bio {
+      font-size: 1em;
+      color: #484848;
+      margin-top: 1em;
+    }
+    .leadership-badge {
+      position: absolute;
+      top: 1.1em;
+      right: 1.1em;
+      background: var(--gold);
+      color: var(--brand2);
+      font-weight:700;
+      padding: .33em 1em;
+      border-radius: 2em;
+      font-size: .95em;
+      box-shadow: 0 1px 8px #3b2db81b;
+    }
+    .team-section-bg {
+      background:linear-gradient(120deg, #f6f7fb 65%, #ede9fc 100%);
+      border-radius:1.3em;
+      padding:1.3em 0 1em 0;
+      margin: 0 0 2em 0;
+    }
+    .team-quote {
+      font-style: italic;
+      color: var(--brand2);
+      margin: 1.5em auto 1.5em auto;
+      max-width: 730px;
+      text-align:center;
+      font-size: 1.15em;
+      padding: 1em 0 0 0;
+    }
+    .footer {
+      background: linear-gradient(120deg, #1a1832 70%, #3b2db8 100%);
+      color: #fff; padding: 38px 0 8px 0;
+      font-size:1.08rem; margin-top: 40px;
+    }
+    .footer a {color:#e8b200;}
+    .footer-social a {
+      background: rgba(59,45,184,0.10);
+      border-radius:50%;
+      color: #e8b200;
+      font-size:1.38rem;
+       width:40px; height:40px;
+      display:inline-flex; align-items:center; justify-content:center;
+      margin: 0 3px; border: 1.5px solid #e8b20033;
+      transition: background .14s, color .14s, transform .13s;
+    }
+     
+    .footer-social a:hover { background: #e8b200; color: #3b2db8; transform:scale(1.10);}
+    @media (max-width:700px){
+      .hero-content h1 { font-size:1.15rem;}
+      .hero-content {padding:20px 0 7px 0;}
+      .section-title {font-size:1.09em;}
+      .team-card {padding:1.1em;}
+      .footer { font-size:.97rem;}
+    }
+  </style>
+ </head>
+ <body>
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="ELITECONSULT BRAND LOGO.png" alt="EliteConsult Logo" style="height:32px;margin-right:8px;">
+      <span>EliteConsult</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="team.html">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-warning ms-3 fw-bold d-none d-lg-inline-block" style="color:#3b2db8;">Get Started</a>
+    </div>
+  </div>
+ </nav>
+ <!-- Hero Section -->
+ <section class="hero-section" style="cursor: pointer;">
+  <div class="container hero-content">
+    <h1>Meet the Team</h1>
+    <p class="mb-0">EliteConsult’s leadership and expert team – the driving force behind our premium, VIP, and VVIP consulting success stories worldwide.</p>
+  </div>
+ </section>
+ <!-- Team Quote -->
+ <div class="team-quote" style="cursor: pointer;">
+  “The strength of any consulting firm lies in its people. At EliteConsult, our team is our edge.”
+ </div>
+ <!-- Leadership & Team Grid -->
+ <section class="container team-section-bg" style="cursor: pointer;">
+  <h2 class="section-title">Leadership & Experts</h2>
+  <div class="row g-4">
+    <div class="col-md-3 col-6">
+      <div class="team-card">
+        <span class="leadership-badge">CEO</span>
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="team-photo" alt="James Carter">
+        <div class="fw-bold">James Carter</div>
+        <div class="team-role">Founder & Chief Executive Officer</div>
+        <div class="team-social mt-2">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </div>
+        <div class="team-bio">James brings 20+ years’ global experience in strategy consulting, digital transformation, and executive leadership for Fortune 500s and high-growth scale-ups.</div>
+      </div>
+    </div>
+    <div class="col-md-3 col-6">
+      <div class="team-card">
+        <span class="leadership-badge" style="background: var(--brand2); color:#fff;">Partner</span>
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="team-photo" alt="Olivia Chen">
+        <div class="fw-bold">Olivia Chen</div>
+        <div class="team-role">Strategy Partner</div>
+        <div class="team-social mt-2">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </div>
+        <div class="team-bio">Olivia is a renowned strategist specializing in market entry, M&A, and transformation for clients across EMEA and North America.</div>
+      </div>
+    </div>
+    <div class="col-md-3 col-6">
+      <div class="team-card">
+        <span class="leadership-badge" style="background: var(--gold);">Digital</span>
+        <img src="https://randomuser.me/api/portraits/men/85.jpg" class="team-photo" alt="Victor Okafor">
+        <div class="fw-bold">Victor Okafor</div>
+        <div class="team-role">Head of Digital</div>
+        <div class="team-social mt-2">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="team-bio">Victor leads EliteConsult’s digital and tech practice, with expertise in process automation, analytics, and digital disruption.</div>
+      </div>
+    </div>
+    <div class="col-md-3 col-6">
+      <div class="team-card">
+        <span class="leadership-badge" style="background: var(--vvip); color:#fff;">VVIP</span>
+        <img src="https://randomuser.me/api/portraits/women/69.jpg" class="team-photo" alt="Sophie Dubois">
+        <div class="fw-bold">Sophie Dubois</div>
+        <div class="team-role">VIP Client Lead</div>
+        <div class="team-social mt-2">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="team-bio">Sophie manages VVIP relationships and white-glove client experience, specializing in family office and global market access.</div>
+      </div>
+    </div>
+  </div>
+  <div class="row g-4 mt-3">
+    <div class="col-md-3 col-6">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/55.jpg" class="team-photo" alt="Adewale Tunde">
+        <div class="fw-bold">Adewale Tunde</div>
+        <div class="team-role">Senior Consultant</div>
+        <div class="team-social mt-2">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="team-bio">Adewale is a senior consultant in risk and compliance, with a background in financial services and cross-border regulation.</div>
+      </div>
+    </div>
+    <div class="col-md-3 col-6">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/women/50.jpg" class="team-photo" alt="Maria Garcia">
+        <div class="fw-bold">Maria Garcia</div>
+        <div class="team-role">Market Analyst</div>
+        <div class="team-social mt-2">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="team-bio">Maria delivers deep-dive research and insights for new market entry and customer analytics projects.</div>
+      </div>
+    </div>
+    <div class="col-md-3 col-6">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/90.jpg" class="team-photo" alt="Samuel Lee">
+        <div class="fw-bold">Samuel Lee</div>
+        <div class="team-role">Leadership Coach</div>
+        <div class="team-social mt-2">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="team-bio">Samuel runs EliteConsult’s leadership workshops and executive coaching programs worldwide.</div>
+      </div>
+    </div>
+    <div class="col-md-3 col-6">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/women/80.jpg" class="team-photo" alt="Fatima Alawi">
+        <div class="fw-bold">Fatima Alawi</div>
+        <div class="team-role">Client Manager</div>
+        <div class="team-social mt-2">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="team-bio">Fatima ensures seamless client onboarding, service delivery, and communications for EliteConsult’s global clients.</div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <!-- Call to action -->
+ <section class="container my-5" style="cursor: pointer;">
+  <div class="text-center py-5" style="background: linear-gradient(100deg,#e8b200 60%,#3b2db8 100%); color:#fff; border-radius:1.3em;">
+    <h3 class="fw-bold mb-3">Work with Our Experts</h3>
+    <p>Contact EliteConsult to access the knowledge and experience of our team for your next project or transformation.</p>
+    <a href="contact.html" class="btn btn-light fw-bold px-4 py-2">Contact Us</a>
+  </div>
+ </section>
+ <!-- Footer -->
+ <footer class="footer" style="cursor: pointer;">
+  <div class="container">
+    <div class="row mb-3">
+      <div class="col-md-6 mb-2">
+        <b>EliteConsult</b> &copy; 2025. Premium Business Consulting. <br>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="col-md-6 mb-2 text-end">
+        <span class="footer-social">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </span>
+      </div>
+    </div>
+  </div>
+ </footer>
+ <!-- Bootstrap, jQuery -->
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ <script>
+  // Smooth Scroll for internal links (if any)
+  $('a[href^="#"]').on('click', function(e) {
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop: target.offset().top - 70}, 500);
+    }
+  });
+ </script>
+ </body>
+ </html>

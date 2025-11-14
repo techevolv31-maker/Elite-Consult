@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>About EliteConsult | Premium Business Consulting Firm</title>
+  <meta name="description" content="Learn about EliteConsult – our story, leadership, mission, values, and why world-class organizations trust us for their consulting needs.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.eliteconsult.com/about.html">
+  <!-- Schema.org for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Corporation",
+    "name": "EliteConsult",
+    "url": "https://www.eliteconsult.com/",
+    "logo": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+    "founder": "James Carter",
+    "foundingDate": "2005",
+    "description": "EliteConsult is a global business consulting firm providing premium, VIP, and VVIP advisory services.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+123-456-7890",
+      "contactType": "Customer service"
+    }
+  }
+  </script>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Poppins:400,600,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand: #1a1832;
+      --brand2: #3b2db8;
+      --gold: #e8b200;
+      --vvip: #6f1ed4;
+      --white: #fff;
+    }
+    html { scroll-behavior:smooth;}
+    body {
+      font-family: 'Poppins', 'Montserrat', Arial, sans-serif;
+      background: #f6f7fb;
+      color: #1a1832;
+      font-size: 1.06em;
+    }
+    /* Navbar */
+    .navbar { background:rgba(26,24,50,0.96) !important; }
+    .navbar-brand, .navbar-nav .nav-link { color:var(--white)!important; }
+    .navbar-brand span { font-weight: 800;}
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {color:var(--gold)!important;}
+    /* Hero */
+    .hero-section {
+      background:linear-gradient(120deg, #1a1832e6 60%, #3b2db8c0 100%), url('firm.jpeg') center/cover no-repeat;
+      color: #fff;
+      min-height: 48vh;
+      display: flex; align-items: center;
+    }
+    .hero-content {
+      padding:45px 0 25px 0;
+      text-align:center;
+      max-width:800px;
+      margin:auto;
+    }
+    .hero-content h1 {
+      font-size:2.2rem; font-weight:900; letter-spacing:-1px;
+      background: linear-gradient(90deg, #e8b200 60%, #fff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-content p {font-size:1.17rem;}
+    /* Section Titles */
+    .section-title { font-weight:800; margin-bottom:1.2em; text-align:center; letter-spacing:-.5px;}
+    /* About Story */
+    .story-card {
+      background:#fff; border-radius:1.3em; box-shadow:0 3px 18px #3b2db80c; padding:2em;
+      margin-bottom:2em;
+    }
+    .values-list {
+      display: flex; flex-wrap: wrap; gap: 1.1em;
+      justify-content:center; margin-top:.8em;
+    }
+    .value-item {
+      background: #f7f7fd;
+      border-left: 4px solid var(--gold);
+      padding:1.1em 1.4em;
+      border-radius:1.1em;
+      min-width:170px; max-width:220px;
+      font-weight:600;
+      color:var(--brand2);
+    }
+    /* Timeline */
+    .timeline-row { position:relative; margin-left:1em;}
+    .timeline-row::before {
+      content: "";
+      position: absolute; left: 18px; top: 0;
+      width: 3px; height: 100%; background: linear-gradient(#e8b200 40%, #6f1ed4 100%);
+      z-index:0;
+    }
+    .timeline-event {
+      position:relative;
+      margin-bottom:2em;
+      padding-left:3.5em;
+    }
+    .timeline-dot {
+      position:absolute; left:4px; top:8px; width:28px; height:28px;
+      background: linear-gradient(120deg,#e8b200 60%,#6f1ed4 100%);
+      border-radius:50%; z-index:1;
+      display:flex; align-items:center; justify-content:center;
+      color:#fff; font-size:1.15em; box-shadow:0 2px 8px #3b2db832;
+    }
+    .timeline-event strong {color:var(--brand2);}
+    /* Team */
+    .team-card { background:#fff; border-radius:1.2em; box-shadow:0 2px 14px #3b2db80b; text-align:center; padding:1.4em;}
+    .team-photo {width:80px;height:80px;object-fit:cover;border-radius:50%;margin-bottom:.7em;}
+    .team-role {color:var(--brand2);font-weight:600;}
+    /* Why Choose Us */
+    .why-card { background:#fff; border-radius:1.2em; box-shadow:0 2px 14px #3b2db80b; padding:1.5em; min-height:185px;}
+    .why-icon {font-size:2em; color:var(--vvip);}
+    /* Footer */
+    .footer {
+      background: linear-gradient(120deg, #1a1832 70%, #3b2db8 100%);
+      color: #fff; padding: 38px 0 8px 0;
+      font-size:1.08rem; margin-top: 40px;
+    }
+    .footer a {color:#e8b200;}
+    .footer-social a {
+       background: rgba(59,45,184,0.10);
+      border-radius:50%;
+      color: #e8b200;
+      font-size:1.38rem;
+      width:40px; height:40px;
+      display:inline-flex; align-items:center; justify-content:center;
+      margin: 0 3px; border: 1.5px solid #e8b20033;
+      transition: background .14s, color .14s, transform .13s;
+    }
+     
+    .footer-social a:hover { background: #e8b200; color: #3b2db8; transform:scale(1.10);}
+    @media (max-width:700px){
+      .hero-content h1 { font-size:1.1rem;}
+      .hero-content {padding:24px 0 10px 0;}
+      .section-title {font-size:1.09em;}
+      .story-card {padding:1em;}
+      .team-card, .why-card {padding:1em;}
+      .footer { font-size:.97rem;}
+      .timeline-event {padding-left:2.3em;}
+      .timeline-dot {width:20px;height:20px;left:0;font-size:.95em;}
+      .timeline-row::before {left:10px;}
+    }
+  </style>
+ </head>
+ <body>
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="ELITECONSULT BRAND LOGO.png" alt="EliteConsult Logo" style="height:32px;margin-right:8px;">
+      <span>EliteConsult</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-warning ms-3 fw-bold d-none d-lg-inline-block" style="color:#3b2db8;">Get Started</a>
+    </div>
+  </div>
+ </nav>
+ <!-- Hero Section -->
+ <section class="hero-section" style="cursor: pointer;">
+  <div class="container hero-content">
+    <h1>About EliteConsult</h1>
+    <p class="mb-0">A legacy of excellence in consulting. Discover our story, mission, values, and the people who power your success.</p>
+  </div>
+ </section>
+ <!-- Story, Mission, Values -->
+ <section class="container my-5" style="cursor: pointer;">
+  <div class="story-card mb-5">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-7">
+        <h2 class="section-title mb-3">Our Story</h2>
+        <p>
+          Founded in 2005, EliteConsult began as a boutique advisory dedicated to bringing world-class strategy and transformation to ambitious businesses. Over two decades, we have grown into a global force—trusted by Fortune 500s, family offices, and trailblazers alike.
+        </p>
+        <p>
+          Our unwavering commitment to discretion, innovation, and measurable impact drives every project. We combine deep industry expertise with personalized service, ensuring every client receives the attention and solutions they deserve.
+        </p>
+      </div>
+      <div class="col-lg-5 text-center">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=500&q=80" alt="About EliteConsult" class="img-fluid rounded-4 shadow">
+      </div>
+    </div>
+  </div>
+  <div class="row g-5 mb-5">
+    <div class="col-md-6">
+      <div class="story-card h-100">
+        <h3 class="fw-bold mb-3 text-primary"><i class="fas fa-bullseye me-2"></i>Our Mission</h3>
+        <p>
+          To empower organizations and leaders to achieve elite success through bespoke consulting, innovation, and trusted partnership.
+        </p>
+        <ul class="list-unstyled values-list mt-4">
+          <li class="value-item"><i class="fas fa-handshake me-2"></i> Integrity</li>
+          <li class="value-item"><i class="fas fa-lightbulb me-2"></i> Innovation</li>
+          <li class="value-item"><i class="fas fa-users me-2"></i> Collaboration</li>
+          <li class="value-item"><i class="fas fa-award me-2"></i> Excellence</li>
+          <li class="value-item"><i class="fas fa-user-secret me-2"></i> Discretion</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="story-card h-100">
+        <h3 class="fw-bold mb-3" style="color:#6f1ed4;"><i class="fas fa-chart-line me-2"></i>Our Values</h3>
+        <p>
+          Every EliteConsult engagement is anchored in absolute confidentiality, measurable results, and the pursuit of excellence. Our values shape our culture and client relationships.
+        </p>
+        <ul class="list-unstyled values-list mt-4">
+          <li class="value-item"><i class="fas fa-trophy me-2"></i> Client Success</li>
+          <li class="value-item"><i class="fas fa-globe me-2"></i> Global Perspective</li>
+          <li class="value-item"><i class="fas fa-bolt me-2"></i> Agility</li>
+          <li class="value-item"><i class="fas fa-hand-holding-usd me-2"></i> Value Creation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+ </section>
+ <!-- Timeline / Achievements -->
+ <section class="container my-5" style="cursor: pointer;">
+  <h2 class="section-title">Our Journey & Achievements</h2>
+  <div class="timeline-row mb-5">
+    <div class="timeline-event">
+      <div class="timeline-dot"><i class="fas fa-flag"></i></div>
+      <strong>2005</strong> - Founded in New York with a mission to deliver premium consulting.
+    </div>
+    <div class="timeline-event">
+      <div class="timeline-dot"><i class="fas fa-users"></i></div>
+      <strong>2010</strong> - Surpassed 100 enterprise clients across 5 countries.
+    </div>
+    <div class="timeline-event">
+      <div class="timeline-dot"><i class="fas fa-globe"></i></div>
+      <strong>2015</strong> - Expanded to EMEA & Asia; launched VIP Advisory practice.
+    </div>
+    <div class="timeline-event">
+      <div class="timeline-dot"><i class="fas fa-chess-queen"></i></div>
+      <strong>2020</strong> - Introduced VVIP Experience for ultra-elite clients.
+    </div>
+    <div class="timeline-event">
+      <div class="timeline-dot"><i class="fas fa-award"></i></div>
+      <strong>2024</strong> - Recognized as a Top 10 Global Consulting Firm by Industry Weekly.
+    </div>
+  </div>
+ </section>
+ <!-- Leadership Team -->
+ <section class="container my-5" style="cursor: pointer;">
+  <h2 class="section-title">Leadership Team</h2>
+  <div class="row g-4">
+    <div class="col-md-3 col-6">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="team-photo" alt="James Carter">
+        <div class="fw-bold">James Carter</div>
+        <div class="team-role">Founder & CEO</div>
+      </div>
+    </div>
+    <div class="col-md-3 col-6">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="team-photo" alt="Olivia Chen">
+        <div class="fw-bold">Olivia Chen</div>
+        <div class="team-role">Strategy Partner</div>
+      </div>
+    </div>
+    <div class="col-md-3 col-6">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/85.jpg" class="team-photo" alt="Victor Okafor">
+        <div class="fw-bold">Victor Okafor</div>
+        <div class="team-role">Head of Digital</div>
+      </div>
+    </div>
+    <div class="col-md-3 col-6">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/women/69.jpg" class="team-photo" alt="Sophie Dubois">
+        <div class="fw-bold">Sophie Dubois</div>
+        <div class="team-role">VIP Client Lead</div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <!-- Why Choose Us -->
+ <section class="container my-5" style="cursor: pointer;">
+  <h2 class="section-title">Why Choose EliteConsult?</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="why-card text-center">
+        <div class="why-icon mb-2"><i class="fas fa-shield-alt"></i></div>
+        <h6 class="fw-bold">Confidentiality & Trust</h6>
+        <div>Absolute discretion and integrity in all our engagements.</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="why-card text-center">
+        <div class="why-icon mb-2"><i class="fas fa-gem"></i></div>
+        <h6 class="fw-bold">Premium, VIP, and VVIP Services</h6>
+        <div>Tiered solutions, white-glove support, and exclusive access for every client need.</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="why-card text-center">
+        <div class="why-icon mb-2"><i class="fas fa-award"></i></div>
+        <h6 class="fw-bold">Proven Global Impact</h6>
+        <div>Track record of measurable results for clients in 15+ industries worldwide.</div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <!-- Footer -->
+ <footer class="footer" style="cursor: pointer;">
+  <div class="container">
+    <div class="row mb-3">
+      <div class="col-md-6 mb-2">
+        <b>EliteConsult</b> &copy; 2025. Premium Business Consulting. <br>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div class="col-md-6 mb-2 text-end">
+        <span class="footer-social">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </span>
+      </div>
+    </div>
+  </div>
+ </footer>
+ <!-- Bootstrap, jQuery -->
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ <script>
+  // Smooth Scroll for internal links
+  $('a[href^="#"]').on('click', function(e) {
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop: target.offset().top - 70}, 500);
+    }
+  });
+ </script>
+ </body>
+ </html>
